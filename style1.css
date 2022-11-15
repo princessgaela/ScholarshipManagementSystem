@@ -1,0 +1,82 @@
+body{
+  font-family: 'raleway', sans-serif;
+  background: #fafafa;
+}
+p{
+  font-family: 'raleway', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+a,
+a:hover,
+a:focus{
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+h1{
+  font-size: 10px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+/*Side Bar*/
+
+.wrapper{
+  display: flex;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar{
+  min-width: 230px;
+  max-width: 230px;
+  background: #f2f2f2;
+  color: #fff;
+  transition:  all 0.3s;
+  height: 100%;
+
+}
+
+#sidebar .active{
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header{
+  padding: 20px;
+  background: #617e3e;
+
+}
+
+#sidebar ul.components{
+  padding: 2px 0;
+  /*border-bottom: 1px solid #47748b;*/
+  padding-bottom: 125px;
+
+}
+
+#sidebar ul{
+  color: #fff;
+  padding: 10px;
+
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: #617e3e;
+}
+
+#sidebar ul li a:hover{
+  color: #b79032;
+  background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"]{
+  color: #b79032;
+  background: #fff;
+}

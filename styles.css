@@ -1,0 +1,113 @@
+body {
+    
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 9%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+form h1, h4, img, button {
+    text-align: center;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+button {
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-left: 27%;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.container {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .sidebar {
+        margin-top: 50px;
+    }
+
+    div.container {
+        width: 100%;
+    }
+}
+
+
